@@ -1,24 +1,12 @@
-# itheima-demo
+1.创建路由
+2.创建文件
+。。。。
+3.定制主题
+在style中创建theme.less
+在vue.config.js中配置文件const path = require('path')
+hack: `true; @import "${path.join(__dirname, 'src/styles/theme.less')}";`
+在theme中添加想要的
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+永久储存
+yarn add vuex-persist
+https://github.com/championswimmer/vuex-persist#readme
