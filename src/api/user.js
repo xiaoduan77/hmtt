@@ -1,4 +1,5 @@
 import request from '@/untils/request'
+import store from '@/store'
 // 发送短信验证码
 export const getSmsCode = (mobile) => {
   return request({
@@ -13,6 +14,15 @@ export const login = ({ mobile, code }) => {
     data: {
       mobile,
       code
+    }
+  })
+}
+
+export const getUserInfo = () => {
+  return request({
+    url: 'user',
+    headers: {
+      Authorization: 'Bearer ' + store.state.user.token
     }
   })
 }
