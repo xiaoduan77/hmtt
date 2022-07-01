@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 登录后 -->
-    <div class="header header-notlogin" v-if="$store.state.user.token">
+    <div class="header header-notlogin" v-if="$store.state.user &&$store.state.user.token">
       <div class="avatar">
         <div class="left">
           <van-image

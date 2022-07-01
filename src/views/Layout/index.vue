@@ -1,5 +1,8 @@
 <template>
   <div>
+    <keep-alive :include="['Home']">
+        <router-view class="main" />
+    </keep-alive>
     <router-view class="main"></router-view>
     <van-tabbar route>
       <van-tabbar-item replace to="/home" icon="home-o"
@@ -33,11 +36,11 @@ export default {
 </script>
 
 <style scoped lang="less">
-.toutiao{
+.toutiao {
   font-size: 40px;
 }
-/deep/ .van-tabbar-item{
-  font-size:20px !important;
+/deep/ .van-tabbar-item {
+  font-size: 20px !important;
 }
 .main {
   padding-bottom: 100px;

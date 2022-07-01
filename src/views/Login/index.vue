@@ -66,7 +66,7 @@ export default {
   created() { },
   data() {
     return {
-      mobile: '13911111111',
+      mobile: '15827875064',
       code: '246810',
       time: 5 * 1000,
       isCountDown: false
