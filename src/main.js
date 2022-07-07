@@ -9,9 +9,14 @@ import 'amfe-flexible'
 // import '@/styles/icon.less'
 // import '@/styles/reset.less'
 import '@/styles/index.less'
-
+import '@/components/index'
 import * as obj from '@/filter'
+
+import FollowUser from '@/components/FollowUser.vue'
+
 Vue.use(Vant)
+Vue.component(FollowUser.name, FollowUser)
+
 Vue.config.productionTip = false
 Object.keys(obj).forEach(key => {
   Vue.filter(key, obj[key])
